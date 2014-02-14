@@ -6,10 +6,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="body" Runat="Server">
    
     <div class="hero-unit" style="background-color:white">
-    <div class="container">
-        <a href="#" class="btn btn-large btn-danger" Call us!<i class="fa fa-phone fa-1x"></i></a>
-    
-        </div>
+    <div class="container">      
+  <h3>Call us and watch us answer!</h3>
+               
+        <a href="Connect.aspx" class="btn btn-large btn-danger" <i class="fa fa-phone fa-1x"></i>Call us!</a>    
+        </div>        
         </div>
 </asp:Content>
 
