@@ -1,0 +1,12 @@
+FullBG is a lightweight jQuery plugin that allows you to use an image for your page background that will resize accordingly to the width of the browser window.
+
+Visit http://cbavota.bitbucket.org/fullbg/ for more info.
+
+== Changelog ==
+
+10/04/2012 v1.0.1
+- Updated all code
+- Improved efficiency
+
+02/07/2012 v1.0.0
+Public Release
