@@ -25,11 +25,11 @@
         
             <div class="container">
                                   
-                    <h1>
-                        <a class='navbar-brand' href="/Index.aspx">
+                    <h3>
+                        <a  href="/Index.aspx">
                             No Funny Biz
                         </a>
-                    </h1>
+                    </h3>
                  </div>
             <!-- /.container -->
                 <div class="navbar">
@@ -54,7 +54,7 @@
         <footer>
             <div class='row'>
                 <div class='col-sm-12'>
-                    <ul class='social-icons'>
+                    <ul class="">
                         <li>
                             <a href='https://twitter.com/evrcm' style="text-decoration: none"><i class="icon-twitter"></i></a>
                         </li>

@@ -1,8 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Connect.aspx.cs" Inherits="Connect" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Camera.aspx.cs" Inherits="Camera" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="body" Runat="Server">
+    <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>    
     <script src="http://cdn.evercam.io/js/v1/evercam-test.js"></script>
@@ -192,3 +193,5 @@
 
 </body>
 </html>
+</asp:Content>
+
