@@ -27,7 +27,7 @@
                                         <div class="auto-style1">
                                             <div style="height: 480px;" id="divimg">
                                                 <!--  -->
-                                                <img id='fullbackground' evercam='dublin-rememberance-floor2' refresh="1000" height="480px" width="640px" alt="" onclick="ExitfullBackgroundImage()" />
+                                                <img id='fullbackground' evercam='' refresh="1000" height="480px" width="640px" alt="" onclick="ExitfullBackgroundImage()" />
                                                 <img />
                                                 <script>
                                                     $(document).ready(function () {
