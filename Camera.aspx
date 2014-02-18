@@ -52,8 +52,7 @@
                                     </div>
                                 </div>
                                 <div style="width: 640px; height: 44px; text-align: left; margin: auto">
-                                    <div style="float: left; margin: 10px 100px 10px 0px;">
-                                        <a href="javascript:ShowAbout();" class="link1">About</a>
+                                    <div style="float: left; margin: 10px 100px 10px 0px;">                                        
                                         <a href="javascript:ExitfullBackgroundImage();" class="link1">Full Screen</a>
                                         <a href="javascript:ShowComments();" class="link1">Comments</a>
                                     </div>
@@ -76,37 +75,12 @@
                                             <td style="width: 260px; text-align: left;" valign="top">
 
                                                 <!-- ************* left ************* -->
-                                                <div style="padding-top: 10px;">
-                                                    <div style="color: White; font-size: 14px;"><strong>ABOUT</strong></div>
-                                                    <div style="width: 247px;">
-                                                        <div style="padding: 2px 0px 2px 0px;">
-                                                        </div>
-                                                        <div style="padding: 2px 0px 2px 0px;">This site is brought to you by:</div>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="http://www.camba.tv" target="_blank" class="link2">Camba.tv</a>
-                                                                (Cameras &amp; Software)
-                                                            </li>
-                                                            <li>
-                                                                <a href="http://www.evercam.com/" target="_blank" class="link2">Evercam.io</a>
-                                                                (Cameras &amp; Software)
-                                                            </li>
-                                                        </ul>
-                                                        <div style="padding: 2px 0px 2px 0px;">
-                                                            For any questions, please contact
-                                                        howrya@evercam.io
-                                                        </div>
-                                                    </div>
-                                                    <div style="height: 175px;"></div>
-                                                    <div><a href="javascript:HideAbout();" class="link1"></div>
-                                                </div>
+                                                
                                                 <!-- ************* left ************* -->
 
                                             </td>
                                             <td style="width: 380px; text-align: right;" align="top">
-                                                <div style="padding: 1px;">
-                                                    <script type="text/javascript" src="http://www.webestools.com/google_map_gen.js?lati=53.354328&long=-6.262840&zoom=18&width=480&height=300&mapType=normal&map_btn_normal=yes&map_btn_satelite=yes&map_btn_mixte=yes&map_small=yes&marqueur=yes&info_bulle="></script>
-                                                </div>
+                                                
                                             </td>
                                         </tr>
                                     </table>
