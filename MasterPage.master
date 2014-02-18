@@ -16,6 +16,7 @@
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="bootstrap/bootstrap/js/bootstrap.js"></script>
     <script src="Scripts/jquery-2.0.3.js"></script>
+
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -55,6 +56,7 @@
         <footer>
             <div class='row'>
                 <div class='col-sm-12'>
+                    <span><a href="About.aspx">About us</a></span>
                     <ul class='social-icons'>
                         <li>
                             <a href='https://twitter.com/evrcm' style="text-decoration: none"><i class="icon-twitter"></i></a>
