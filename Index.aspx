@@ -14,13 +14,14 @@
   <h3>Call us and watch us answer!</h3> 
         <p style="margin-left:-65px;">Use Twilio to call our office and watch us answer on camera.</p>         
   
-    <button class="call" onclick="callpage_Click">
+    <%--<button <%--class="call" onclick="callpage_Click">
       Call
-    </button>
+    </button>--%>
+        <button class="btn btn-danger btn-large" onclick="callpage_Click"><i class="icon-phone"></i> Call us!</button>
   
-    <button class="hangup" onclick="hangup();">
+    <%--<button class="hangup" onclick="hangup();">
       Hangup
-    </button>        
+    </button> --%>       
            
         </div>        
         </div>
