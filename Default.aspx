@@ -17,6 +17,7 @@
     <%--<button <%--class="call" onclick="callpage_Click">
       Call
     </button>--%>
+        <asp:Button runat="server" id="GreetButton" text="Call us!" OnClick="GreetButton_Click" />
     <button class="btn btn-danger btn-large" runat="server" onclick="callpage_Click" style="margin-left:95px"><i class="icon-phone"></i> Call us!</button>
   
     <%--<button class="hangup" onclick="hangup();">
