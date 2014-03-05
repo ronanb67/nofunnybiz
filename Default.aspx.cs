@@ -13,63 +13,53 @@ public partial class _Default : System.Web.UI.Page
     {
 
     }
-    protected void callpage_Click(object sender, EventArgs e)
-    { // Find your Account Sid and Auth Token at twilio.com/user/account 
-        string AccountSid = "AC15403cb368014b2d1eb45fa4e366343e";
-        string AuthToken = "db65726686db0599044da6e2664f5dba";
-        var twilio = new TwilioRestClient(AccountSid, AuthToken);
-
-
-        // Build the parameters 
-        CallOptions options = new CallOptions();
-        options.To = "+353862240661";
-        options.From = "+353766805789";
-        options.Url = "http://demo.twilio.com/docs/voice.xml";
-        options.ApplicationSid = "APe287283110f74e87eaefde2b990398c6";
-        options.Method = "GET";
-        options.FallbackMethod = "GET";
-        options.StatusCallbackMethod = "GET";
-        options.Record = false;
-
-        var call = twilio.InitiateOutboundCall(options);
-        Console.WriteLine(call.Sid);
-        if (call.RestException == null)
-        {
-            Response.Write(string.Format("Started call: {0}", call.Sid));
-        }
-        else
-        {
-            Response.Write(string.Format("Error: {0}", call.RestException.Message));
-        }
-    }
-    protected void GreetButton_Click(object sender, EventArgs e)
+    public string TwilioToken
     {
-        string AccountSid = "AC15403cb368014b2d1eb45fa4e366343e";
-        string AuthToken = "db65726686db0599044da6e2664f5dba";
-        var twilio = new TwilioRestClient(AccountSid, AuthToken);
-
-
-        // Build the parameters 
-        CallOptions options = new CallOptions();
-        options.To = "+353862240661";
-        options.From = "+353766805789";
-        options.Url = "http://demo.twilio.com/docs/voice.xml";
-        options.ApplicationSid = "APe287283110f74e87eaefde2b990398c6";
-        options.Method = "GET";
-        options.FallbackMethod = "GET";
-        options.StatusCallbackMethod = "GET";
-        options.Record = false;
-
-        var call = twilio.InitiateOutboundCall(options);
-        Console.WriteLine(call.Sid);
-        if (call.RestException == null)
+        get
         {
-            Response.Write(string.Format("Started call: {0}", call.Sid));
-        }
-        else
-        {
-            Response.Write(string.Format("Error: {0}", call.RestException.Message));
+            string accountSid = "AC15403cb368014b2d1eb45fa4e366343e";
+            string authToken = "db65726686db0599044da6e2664f5dba";
+            string applicationSid = "APe287283110f74e87eaefde2b990398c6";
+            string clientName = "evercam";
+            if (Request["client"] != null)
+            {
+                clientName = Request["client"];
+            }
+            var capability = new TwilioCapability(accountSid, authToken);
+            capability.AllowClientOutgoing(applicationSid);
+            capability.AllowClientIncoming(clientName);
+            return capability.GenerateToken();
         }
     }
+    //protected void callpage_Click(object sender, EventArgs e)
+    //{ // Find your Account Sid and Auth Token at twilio.com/user/account 
+    //    string AccountSid = "AC15403cb368014b2d1eb45fa4e366343e";
+    //    string AuthToken = "db65726686db0599044da6e2664f5dba";
+    //    var twilio = new TwilioRestClient(AccountSid, AuthToken);
+
+
+    //    // Build the parameters 
+    //    CallOptions options = new CallOptions();
+    //    options.To = "+353862240661";
+    //    options.From = "+353766805789";
+    //    options.Url = "http://demo.twilio.com/docs/voice.xml";
+    //    options.ApplicationSid = "APe287283110f74e87eaefde2b990398c6";
+    //    options.Method = "GET";
+    //    options.FallbackMethod = "GET";
+    //    options.StatusCallbackMethod = "GET";
+    //    options.Record = false;
+
+    //    var call = twilio.InitiateOutboundCall(options);
+    //    Console.WriteLine(call.Sid);
+    //    if (call.RestException == null)
+    //    {
+    //        Response.Write(string.Format("Started call: {0}", call.Sid));
+    //    }
+    //    else
+    //    {
+    //        Response.Write(string.Format("Error: {0}", call.RestException.Message));
+    //    }
+    //}
+   
 }
 
