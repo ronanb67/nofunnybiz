@@ -45,7 +45,7 @@
     <div class="hero-unit" style="background-color: white; margin-left: 650px;">
         <div class="container">
             <h3>Call us and watch us answer!</h3>
-            <p style="margin-left: -65px;">Use Twilio to call our office and watch us answer on camera.</p>
+            <p style="margin-left: -65px;">Use Twilio to call our office and watch us answer on camera!</p>
             <button class="call" onclick="call();">
                 Call
             </button>
