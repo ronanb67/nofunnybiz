@@ -46,12 +46,14 @@
         <div class="container">
             <h3>Call us and watch us answer!</h3>
             <p style="margin-left: -65px;">Use Twilio to call our office and watch us answer on camera!</p>
-            <button class="call" onclick="call();">
+            <button class="btn btn-danger btn-large" onclick="call();">Call <i class="icon-white icon-headphones"></i></button>
+            <%--<button class="call" onclick="call();">
                 Call
-            </button>
-            <button class="hangup" onclick="hangup();">
+            </button>--%>
+            <button class="btn btn-danger btn-large" onclick="hangup();">Hangup <i class="icon-white icon-headphones"></i></button>
+            <%--<button class="hangup" onclick="hangup();">
                 Hangup
-            </button>
+            </button>--%>
             <input type="text" id="number" name="number"
                 placeholder="Enter a phone number or client to call" />
         </div>
